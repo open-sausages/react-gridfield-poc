@@ -1,0 +1,3 @@
+MyApp\TestModule\Note:
+  extensions:
+    - MyOtherApp\TestModuleExtension\NoteExtension

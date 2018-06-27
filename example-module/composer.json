@@ -1,0 +1,10 @@
+{
+  "name": "silverstripe/example-module",
+  "type": "silverstripe-module",
+  "extra": {
+    "expose": [
+      "client/dist/js",
+      "client/dist/styles/"
+    ]
+  }
+}
