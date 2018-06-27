@@ -1,9 +1,0 @@
-{
-  "name": "silverstripe/testmodule-extension",
-  "type": "silverstripe-module",
-  "extra": {
-    "expose": [
-      "client/dist/js"
-    ]
-  }
-}
