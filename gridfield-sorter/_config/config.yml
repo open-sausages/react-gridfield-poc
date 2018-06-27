@@ -1,0 +1,6 @@
+---
+name: gridfield-sorter
+---
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_javascript:
+    - 'silverstripe/gridfield-sorter:client/dist/js/bundle.js'

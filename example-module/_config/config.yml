@@ -1,0 +1,6 @@
+---
+name: example-module
+---
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_javascript:
+    - 'silverstripe/example-module:client/dist/js/bundle.js'

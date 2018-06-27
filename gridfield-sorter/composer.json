@@ -1,0 +1,10 @@
+{
+  "name": "silverstripe/gridfield-sorter",
+  "type": "silverstripe-module",
+  "extra": {
+    "expose": [
+      "client/dist/js",
+      "client/dist/styles/"
+    ]
+  }
+}
