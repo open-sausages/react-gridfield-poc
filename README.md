@@ -1,28 +1,21 @@
 ## Overview
 
-Base project folder for a SilverStripe ([http://silverstripe.org](http://silverstripe.org)) installation. Required modules are installed via [http://github.com/silverstripe/recipe-cms](http://github.com/silverstripe/recipe-cms). For information on how to change the dependencies in a recipe, please have a look at [https://github.com/silverstripe/recipe-plugin](https://github.com/silverstripe/recipe-plugin). In addition, installer includes [theme/simple](https://github.com/silverstripe-themes/silverstripe-simple) as a default theme.
+This is an example project that creates a POC of a React-based GridField, testing several APIs and simulating extension through modules.
 
-## Installation ##
+## Installation
+`$ git clone .... && composer install`
 
-See [installation on different platforms](http://doc.silverstripe.org/framework/en/installation/),
-and [installation from source](http://doc.silverstripe.org/framework/en/installation/from-source).
+## Usage
 
-## Bugtracker ##
+Go to the "Test module" admin panel. It's a hacked ModelAdmin interface that renders a form through FormSchema that uses a gridfield to display a list of `Note` objects. (They will be created on `dev/build`).
 
-Bugs are tracked on github.com ([framework issues](https://github.com/silverstripe/silverstripe-framework/issues),
-[cms issues](https://github.com/silverstripe/silverstripe-cms/issues)).
-Please read our [issue reporting guidelines](https://docs.silverstripe.org/en/4/contributing/issues_and_bugs/).
+### Core dev branches
+* `open-sausages/silverstripe-admin: dev/experimental-gridfield`
+* `open-sausages/silverstripe-framework: dev/experimental-gridfield`
 
-## Development and Contribution ##
+## Components
+* **example-module** Adds an example DataObject (`MyApp\TestModule\Note`), and creates a view for it in the `TestModule` section of the CMS
+* **example-module-extension** Adds a field to the `MyApp\TestModule\Note` object (`Priority`) and adds that field to `$summary_fields`
+* **gridfield-sorter** Is an example thirdparty module that offers a GridFieldComponent. The component, `SortingComponent` adds a dropdown field of all the object's fields above the gridfield and sorts the data.
 
-If you would like to make changes to the SilverStripe core codebase, we have an extensive [guide to contributing code](http://doc.silverstripe.org/framework/en/misc/contributing/code).
 
-## Links ##
-
- * [Changelogs](http://doc.silverstripe.org/framework/en/changelogs/)
- * [Bugtracker: Framework](https://github.com/silverstripe/silverstripe-framework/issues)
- * [Bugtracker: CMS](https://github.com/silverstripe/silverstripe-cms/issues)
- * [Bugtracker: Installer](https://github.com/silverstripe/silverstripe-installer/issues)
- * [Forums](http://silverstripe.org/forums)
- * [Developer Mailinglist](https://groups.google.com/forum/#!forum/silverstripe-dev)
- * [License](./LICENSE)
