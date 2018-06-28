@@ -4,6 +4,7 @@ This is an example project that creates a POC of a React-based GridField, testin
 
 ## Installation
 `$ git clone .... && composer install`
+`$ composer vendor-expose`
 
 ## Usage
 
